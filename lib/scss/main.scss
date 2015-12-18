@@ -20,7 +20,22 @@ button {
 }
 
 
-.selected {
+.startSelected {
     background: #4FC3F7;
+    color: white;
+}
+
+.endSelected {
+    background: red;
+    color: white;
+}
+
+.midSelected {
+    background: #757575;
+    color: white;
+}
+
+.startHover {
+    background: green;
     color: white;
 }
