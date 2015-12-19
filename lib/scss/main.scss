@@ -88,11 +88,17 @@ button {
     color: white;
 }
 
+.startSelected, .endSelected {
+    &.hoverable {
+        background: #1087C5;
+    }
+}
+
 .midSelected {
     background: $hoverable;
 }
 
-.startHover {
+.startHover, .hoverable {
     background: $hoverable;
 }
 
