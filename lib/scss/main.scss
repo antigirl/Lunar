@@ -1,45 +1,102 @@
+$selected: #0097d7;
+$hoverable: #D6D6D6;
+
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 721px;
+    margin: 0 auto;
+}
 
 .title {
+    background: $selected;
+    color: white;
+    padding: 10px;
     text-align: center;
+}
+
+.ctabuttons {
+    text-align: center;
+
+    button {
+        cursor: pointer;
+        font-size: 14px;
+        background: #0097d7;
+        color: #fff;
+        border-bottom: 2px solid #1087c5;
+        border-radius: .25em;
+        padding: .625em 1.6875em;
+        margin-right: 10px;
+
+        &:first-child {
+            background: #fff;
+            color: #0097d7;
+            border: none;
+            display: inline-block;
+            margin-top: 2.14286em;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 table {
     display: inline-block;
     vertical-align: top;
     margin-right: 50px;
+    border-spacing: 0;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
 
     td {
-        padding: 5px;
+        padding: 10px;
         text-align: center;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .tableTitles {
+        text-align: center;
+        padding: 20px 0;
     }
 }
 
 
 button {
     font-size: 20px;
+    background: none;
+    margin-top: 13px;
+    border: 0;
+    color: $selected;
 }
 
 
 .startSelected {
-    background: #4FC3F7;
+    background: $selected;
     color: white;
 }
 
 .endSelected {
-    background: red;
+    background: $selected;
     color: white;
 }
 
 .midSelected {
-    background: #757575;
-    color: white;
+    background: $hoverable;
 }
 
 .startHover {
-    background: green;
-    color: white;
+    background: $hoverable;
 }
 
 .staleDay {
     opacity: 0.5;
+    cursor: not-allowed;
 }
