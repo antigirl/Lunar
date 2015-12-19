@@ -19,6 +19,7 @@
         "comma-dangle": 0,
         "new-cap": 0,
         "id-length": 0,
-        "no-multiple-empty-lines": 2
+        "no-multiple-empty-lines": 2,
+        "react/sort-comp": 0
     }
 }
